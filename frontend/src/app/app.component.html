@@ -1,0 +1,59 @@
+<label>User Name</label>
+<input type="text" placeholder="username">
+<br>
+<br>
+<label>Password</label>
+<input type="text" placeholder="password">
+<br>
+<br>
+
+<button>Login</button>
+<br>
+<br>
+<button>Logout</button>
+
+<br>
+<br>
+<!-- <div class="g-signin2" data-onsuccess="onSignIn"></div> -->
+
+<div id="g_id_onload"
+     data-client_id="462068634772-l8n75472f4q373msfq8g9pgu4dvhtg2v.apps.googleusercontent.com"
+     data-context="signin"
+     data-ux_mode="popup"
+     data-login_uri="http://localhost:3000/sso/login"
+     data-itp_support="true">
+</div>
+
+<div class="g_id_signin"
+     data-type="standard"
+     data-shape="rectangular"
+     data-theme="filled_black"
+     data-text="signin_with"
+     data-size="large"
+     data-logo_alignment="left">
+</div>
+
+<!-- <div id="g_id_onload"
+     data-client_id="462068634772-l8n75472f4q373msfq8g9pgu4dvhtg2v.apps.googleusercontent.com"
+     data-context="signin"
+     data-ux_mode="popup"
+     data-callback="onSignInSso"
+     data-itp_support="true">
+</div>
+
+<div class="g_id_signin"
+     data-type="standard"
+     data-shape="rectangular"
+     data-theme="filled_black"
+     data-text="signin_with"
+     data-size="large"
+     data-logo_alignment="left">
+</div> -->
+<button (click)="openGoogleSignInTab()">Sign in with Google</button>
+<br>
+<br>
+
+
+<a href="#" onclick="signOut();">Sign out</a>
+
+<router-outlet></router-outlet>
